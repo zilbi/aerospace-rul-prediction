@@ -1,42 +1,82 @@
 # Aerospace RUL Prediction
 
-This repository contains a Jupyter notebook for Remaining Useful Life (RUL)
-prediction on the NASA C-MAPSS turbofan engine degradation dataset.
+Проект с Jupyter Notebook для прогнозирования Remaining Useful Life (RUL)
+авиационных двигателей на датасете NASA C-MAPSS.
 
-## Contents
+## Что находится в репозитории
 
-- `test.ipynb` - notebook with data loading, feature engineering, model training,
-  and evaluation.
-- `CMAPSSData/` - C-MAPSS train/test/RUL text files and dataset documentation.
-- `requirements.txt` - Python packages needed to run the notebook.
+- `test.ipynb` - ноутбук с загрузкой данных, подготовкой признаков,
+  обучением модели и оценкой качества.
+- `CMAPSSData/` - файлы датасета C-MAPSS: train, test, RUL и описание данных.
+- `requirements.txt` - список Python-библиотек для запуска ноутбука.
 
-## Install Requirements Without a Virtual Environment
+## Установка зависимостей
 
-Run the commands from the repository root.
+Сначала откройте терминал в папке проекта.
 
-```bash
-python3 -m pip install --user -r requirements.txt
+### Windows
+
+```powershell
+py -m pip install -r requirements.txt
 ```
 
-If your system uses `python` instead of `python3`, run:
+Если команда `py` не работает, попробуйте:
 
-```bash
-python -m pip install --user -r requirements.txt
+```powershell
+python -m pip install -r requirements.txt
 ```
 
-On Windows, run:
+### macOS
 
 ```bash
-py -m pip install --user -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
-## Run the Notebook
+Если Python запускается командой `python`, используйте:
 
-Start Jupyter Notebook from the repository root so the relative paths to
-`CMAPSSData/` work correctly:
+```bash
+python -m pip install -r requirements.txt
+```
+
+### Linux
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Если Python запускается командой `python`, используйте:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Запуск ноутбука
+
+Запускайте Jupyter Notebook из корневой папки проекта, чтобы пути к
+`CMAPSSData/` работали правильно.
+
+### Windows
+
+```powershell
+py -m notebook test.ipynb
+```
+
+Если команда `py` не работает:
+
+```powershell
+python -m notebook test.ipynb
+```
+
+### macOS и Linux
 
 ```bash
 python3 -m notebook test.ipynb
 ```
 
-Then run the notebook cells in order.
+Если Python запускается командой `python`:
+
+```bash
+python -m notebook test.ipynb
+```
+
+После открытия Jupyter запустите ячейки ноутбука по порядку.
