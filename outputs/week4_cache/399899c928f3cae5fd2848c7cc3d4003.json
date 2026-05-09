@@ -1,0 +1,29 @@
+{
+  "selected_blocks": [
+    "last_minus_mean",
+    "mean",
+    "slope",
+    "slope_change",
+    "volatility"
+  ],
+  "window_size": 80,
+  "rul_cap": 130,
+  "rf_max_depth": 16,
+  "rf_min_samples_leaf": 4,
+  "rf_min_samples_split": 10,
+  "rf_max_features": 0.6,
+  "MAE": 6.527768735044316,
+  "RMSE": 9.86467939109857,
+  "R2": 0.9248170047240787,
+  "mean_error": 3.7761917604575204,
+  "overestimation_share": 0.74,
+  "max_overestimation": 37.13470124930939,
+  "near_failure_MAE": 3.1805641313998203,
+  "warning_zone_MAE": 7.837135714368055,
+  "feature_count": 120,
+  "train_seconds": 50.20168059999992,
+  "fitness": 11.169740331610306,
+  "candidate_hash": "399899c928f3cae5fd2848c7cc3d4003",
+  "status": "ok",
+  "from_cache": false
+}
